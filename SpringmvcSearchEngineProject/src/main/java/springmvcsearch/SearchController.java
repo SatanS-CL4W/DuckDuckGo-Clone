@@ -18,7 +18,7 @@ public class SearchController {
 	@PostMapping("/doSearch")
 	public RedirectView search(@RequestParam("queryBox") String query) {
 		
-		String url = "https://www.google.com/search?q=" + query;
+		String url = "https://www.duckduckgo.com/?q=" + query;
 		RedirectView rw = new RedirectView();
 		
 		rw.setUrl(url);
